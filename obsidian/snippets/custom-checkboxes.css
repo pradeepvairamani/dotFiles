@@ -1,0 +1,189 @@
+/* ========================================
+   CUSTOM CHECKBOXES & TASK STYLING
+   ======================================== */
+
+/* Base checkbox styling */
+.markdown-preview-view .task-list-item-checkbox {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--text-muted);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    margin-right: 8px;
+}
+
+.markdown-preview-view .task-list-item-checkbox:hover {
+    border-color: var(--interactive-accent);
+    transform: scale(1.1);
+}
+
+/* Checked state */
+.markdown-preview-view .task-list-item-checkbox:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    top: -2px;
+    left: 2px;
+}
+
+/* Custom checkbox types with emojis */
+
+/* [>] Forward/Scheduled - Blue arrow */
+.markdown-preview-view li[data-task=">"] .task-list-item-checkbox {
+    border-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.markdown-preview-view li[data-task=">"] .task-list-item-checkbox::after {
+    content: "→";
+    color: #3b82f6;
+    font-weight: bold;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+
+/* [<] Rescheduled - Purple arrow */
+.markdown-preview-view li[data-task="<"] .task-list-item-checkbox {
+    border-color: #a855f7;
+    background-color: rgba(168, 85, 247, 0.1);
+}
+
+.markdown-preview-view li[data-task="<"] .task-list-item-checkbox::after {
+    content: "←";
+    color: #a855f7;
+    font-weight: bold;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+
+/* [!] Important - Red exclamation */
+.markdown-preview-view li[data-task="!"] .task-list-item-checkbox {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.markdown-preview-view li[data-task="!"] .task-list-item-checkbox::after {
+    content: "!";
+    color: #ef4444;
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    font-size: 16px;
+}
+
+/* [?] Question - Orange question mark */
+.markdown-preview-view li[data-task="?"] .task-list-item-checkbox {
+    border-color: #f97316;
+    background-color: rgba(249, 115, 22, 0.1);
+}
+
+.markdown-preview-view li[data-task="?"] .task-list-item-checkbox::after {
+    content: "?";
+    color: #f97316;
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    left: 4px;
+    font-size: 14px;
+}
+
+/* [*] Star/Important - Yellow star */
+.markdown-preview-view li[data-task="*"] .task-list-item-checkbox {
+    border-color: #eab308;
+    background-color: rgba(234, 179, 8, 0.1);
+}
+
+.markdown-preview-view li[data-task="*"] .task-list-item-checkbox::after {
+    content: "★";
+    color: #eab308;
+    font-weight: bold;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    font-size: 14px;
+}
+
+/* [-] Cancelled - Gray strikethrough */
+.markdown-preview-view li[data-task="-"] .task-list-item-checkbox {
+    border-color: #6b7280;
+    background-color: rgba(107, 114, 128, 0.1);
+}
+
+.markdown-preview-view li[data-task="-"] .task-list-item-checkbox::after {
+    content: "−";
+    color: #6b7280;
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    left: 3px;
+    font-size: 18px;
+}
+
+.markdown-preview-view li[data-task="-"] {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* [/] In Progress - Accent color progress icon */
+.markdown-preview-view li[data-task="/"] .task-list-item-checkbox {
+    border-color: var(--interactive-accent);
+    background-color: rgba(var(--interactive-accent-rgb), 0.1);
+}
+
+.markdown-preview-view li[data-task="/"] .task-list-item-checkbox::after {
+    content: "◐";
+    color: var(--interactive-accent);
+    font-weight: bold;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    font-size: 14px;
+}
+
+/* [i] Info - Cyan info icon */
+.markdown-preview-view li[data-task="i"] .task-list-item-checkbox {
+    border-color: #06b6d4;
+    background-color: rgba(6, 182, 212, 0.1);
+}
+
+.markdown-preview-view li[data-task="i"] .task-list-item-checkbox::after {
+    content: "i";
+    color: #06b6d4;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    top: -3px;
+    left: 5px;
+    font-size: 14px;
+}
+
+/* Task list hover effect */
+.markdown-preview-view .task-list-item:hover {
+    background: rgba(var(--interactive-accent-rgb), 0.05);
+    border-radius: 4px;
+    margin-left: -8px;
+    padding-left: 8px;
+    transition: all 0.2s ease;
+}
+
+/* Completed task styling */
+.markdown-preview-view .task-list-item.is-checked {
+    opacity: 0.7;
+}
+
+.markdown-preview-view .task-list-item.is-checked:not([data-task="-"]) {
+    text-decoration: line-through;
+}

@@ -1,0 +1,10 @@
+{
+  "imageNamePattern": "5. Metadata/Media/Images/{{fileName}}-{{DATE:ss}}",
+  "dupNumberAtStart": false,
+  "dupNumberDelimiter": "-",
+  "dupNumberAlways": true,
+  "autoRename": true,
+  "handleAllAttachments": false,
+  "excludeExtensionPattern": "",
+  "disableRenameNotice": false
+}
