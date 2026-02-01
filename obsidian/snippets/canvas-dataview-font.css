@@ -1,0 +1,62 @@
+/* Canvas Dataview Table Styling - Extra Large Fonts */
+
+/* Increase font size for all canvas card content */
+.canvas-node-content {
+  font-size: 24px !important;
+}
+
+/* Dataview tables in canvas */
+.canvas-node-content .dataview.table-view-table {
+  font-size: 22px !important;
+}
+
+/* Table headers */
+.canvas-node-content .dataview.table-view-table th {
+  font-size: 24px !important;
+  font-weight: 600;
+  padding: 14px 18px;
+}
+
+/* Table cells */
+.canvas-node-content .dataview.table-view-table td {
+  font-size: 22px !important;
+  padding: 12px 18px;
+  line-height: 1.5;
+}
+
+/* Headings in canvas cards */
+.canvas-node-content h2 {
+  font-size: 32px !important;
+  margin-bottom: 18px;
+}
+
+.canvas-node-content h3 {
+  font-size: 28px !important;
+}
+
+/* Links in tables */
+.canvas-node-content .dataview.table-view-table a {
+  font-size: 22px !important;
+}
+
+/* Dataview list output */
+.canvas-node-content .dataview.list-view-ul {
+  font-size: 22px !important;
+}
+
+.canvas-node-content .dataview.list-view-ul li {
+  font-size: 22px !important;
+  line-height: 1.6;
+}
+
+/* Book cover images - make them larger */
+.canvas-node-content .dataview.table-view-table img {
+  max-height: 140px;
+  width: auto;
+}
+
+/* General text in canvas */
+.canvas-node-content p {
+  font-size: 22px !important;
+  line-height: 1.5;
+}

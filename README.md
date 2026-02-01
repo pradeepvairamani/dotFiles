@@ -7,6 +7,11 @@ Personal macOS configuration synced via git.
 ```
 ├── iterm2/          # iTerm2 preferences
 │   └── com.googlecode.iterm2.plist
+├── obsidian/        # Obsidian vault settings
+│   ├── *.json       # Core config files
+│   ├── plugins/     # Community plugins
+│   ├── snippets/    # CSS snippets
+│   └── themes/      # Installed themes
 ├── vscode/          # VS Code settings
 │   ├── settings.json
 │   ├── keybindings.json
@@ -59,6 +64,22 @@ cp ~/.dotfiles/zsh/.zshrc.local.template ~/.zshrc.local
 # Edit ~/.zshrc.local and add your secrets
 ```
 
+### Obsidian
+
+```bash
+# Copy settings to your vault (replace YOUR_VAULT with your vault path)
+VAULT=~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/YOUR_VAULT
+
+cp ~/.dotfiles/obsidian/*.json "$VAULT/.obsidian/"
+cp -r ~/.dotfiles/obsidian/plugins "$VAULT/.obsidian/"
+cp -r ~/.dotfiles/obsidian/snippets "$VAULT/.obsidian/"
+cp -r ~/.dotfiles/obsidian/themes "$VAULT/.obsidian/"
+
+# If using Todoist plugin, copy your token
+cp ~/.dotfiles/obsidian/todoist-token.template "$VAULT/.obsidian/todoist-token"
+# Edit the file and add your API token
+```
+
 ## Updating Settings
 
 ### iTerm2
@@ -75,6 +96,17 @@ code --list-extensions > ~/.dotfiles/vscode/extensions.txt
 ```bash
 cp ~/.zshrc ~/.dotfiles/zsh/.zshrc
 # Make sure to remove any secrets before committing!
+```
+
+### Obsidian
+```bash
+VAULT=~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/YOUR_VAULT
+cp "$VAULT/.obsidian/"*.json ~/.dotfiles/obsidian/
+cp -r "$VAULT/.obsidian/plugins" ~/.dotfiles/obsidian/
+cp -r "$VAULT/.obsidian/snippets" ~/.dotfiles/obsidian/
+cp -r "$VAULT/.obsidian/themes" ~/.dotfiles/obsidian/
+# Remove todoist-token and workspace files before committing!
+rm -f ~/.dotfiles/obsidian/todoist-token ~/.dotfiles/obsidian/workspace*.json
 ```
 
 ### Commit and push

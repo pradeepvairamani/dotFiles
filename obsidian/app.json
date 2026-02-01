@@ -1,0 +1,16 @@
+{
+  "propertiesInDocument": "hidden",
+  "smartIndentList": true,
+  "autoConvertHtml": false,
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": true,
+  "newFileLocation": "current",
+  "newFileFolderPath": "",
+  "focusNewTab": true,
+  "defaultViewMode": "preview",
+  "showFileCount": false,
+  "openLinksInNewLeaf": false,
+  "strictLineBreaks": false
+}

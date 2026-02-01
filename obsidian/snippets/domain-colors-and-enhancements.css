@@ -1,0 +1,402 @@
+/* ========================================
+   DOMAIN-COLORED TAGS
+   ======================================== */
+
+/* Computer Science - Blue */
+.tag[href="#cs"],
+.tag[href*="#computer-science"],
+.tag[href^="#cs/"] {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Economics - Green */
+.tag[href="#economics"],
+.tag[href^="#economics/"] {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* Mind/Psychology - Purple */
+.tag[href="#mind"],
+.tag[href^="#mind/"] {
+    background-color: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Science - Orange */
+.tag[href="#science"],
+.tag[href^="#science/"] {
+    background-color: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+/* Society - Red/Pink */
+.tag[href="#society"],
+.tag[href^="#society/"] {
+    background-color: rgba(236, 72, 153, 0.15);
+    color: #ec4899;
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+/* Meta - Gray */
+.tag[href="#meta"],
+.tag[href^="#meta/"] {
+    background-color: rgba(107, 114, 128, 0.15);
+    color: #6b7280;
+    border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+/* ========================================
+   STATUS & TYPE TAGS
+   ======================================== */
+
+/* Evergreen - Rich Green */
+.tag[href="#evergreen"] {
+    background-color: rgba(5, 150, 105, 0.2);
+    color: #059669;
+    border: 1px solid rgba(5, 150, 105, 0.4);
+    font-weight: 600;
+}
+
+/* Seedling - Light Green */
+.tag[href="#seedling"] {
+    background-color: rgba(132, 204, 22, 0.15);
+    color: #84cc16;
+    border: 1px solid rgba(132, 204, 22, 0.3);
+}
+
+/* Draft - Yellow */
+.tag[href="#draft"] {
+    background-color: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+/* Stub - Gray */
+.tag[href="#stub"] {
+    background-color: rgba(156, 163, 175, 0.15);
+    color: #9ca3af;
+    border: 1px solid rgba(156, 163, 175, 0.3);
+}
+
+/* Concept - Teal (matches your accent) */
+.tag[href="#concept"] {
+    background-color: rgba(10, 168, 189, 0.15);
+    color: #0aa8bd;
+    border: 1px solid rgba(10, 168, 189, 0.3);
+    font-weight: 500;
+}
+
+/* Framework - Indigo */
+.tag[href="#framework"] {
+    background-color: rgba(99, 102, 241, 0.15);
+    color: #6366f1;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Reference - Cyan */
+.tag[href="#reference"] {
+    background-color: rgba(6, 182, 212, 0.15);
+    color: #06b6d4;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+/* Index - Slate */
+.tag[href="#index"],
+.tag[href="#map-of-content"] {
+    background-color: rgba(71, 85, 105, 0.2);
+    color: #475569;
+    border: 1px solid rgba(71, 85, 105, 0.4);
+    font-weight: 600;
+}
+
+/* Theme tags - Amber */
+.tag[href^="#theme/"] {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Tool - Steel Blue */
+.tag[href="#tool"] {
+    background-color: rgba(71, 140, 184, 0.15);
+    color: #478cb8;
+    border: 1px solid rgba(71, 140, 184, 0.3);
+}
+
+/* Source tags - Muted colors */
+.tag[href^="#from-"] {
+    background-color: rgba(148, 163, 184, 0.1);
+    color: #94a3b8;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    font-size: 0.9em;
+}
+
+/* ========================================
+   ENHANCED CALLOUTS
+   ======================================== */
+
+/* Definition Callout - Blue */
+.callout[data-callout="definition"] {
+    --callout-color: 59, 130, 246;
+    --callout-icon: lucide-book-open;
+}
+
+/* Related Callout - Teal (accent color) */
+.callout[data-callout="related"] {
+    --callout-color: 10, 168, 189;
+    --callout-icon: lucide-link;
+}
+
+/* Key Insight Callout - Purple */
+.callout[data-callout="insight"] {
+    --callout-color: 168, 85, 247;
+    --callout-icon: lucide-lightbulb;
+}
+
+/* Caution Callout - Amber */
+.callout[data-callout="caution"] {
+    --callout-color: 245, 158, 11;
+    --callout-icon: lucide-alert-triangle;
+}
+
+/* Framework Callout - Indigo */
+.callout[data-callout="framework"] {
+    --callout-color: 99, 102, 241;
+    --callout-icon: lucide-layers;
+}
+
+/* Practice Callout - Green */
+.callout[data-callout="practice"] {
+    --callout-color: 34, 197, 94;
+    --callout-icon: lucide-check-circle;
+}
+
+/* Question Callout - Orange */
+.callout[data-callout="question"] {
+    --callout-color: 249, 115, 22;
+    --callout-icon: lucide-help-circle;
+}
+
+/* Resource Callout - Cyan */
+.callout[data-callout="resource"] {
+    --callout-color: 6, 182, 212;
+    --callout-icon: lucide-library;
+}
+
+/* Status Callout - Pink */
+.callout[data-callout="status"] {
+    --callout-color: 236, 72, 153;
+    --callout-icon: lucide-activity;
+}
+
+/* Meta Callout - Gray */
+.callout[data-callout="meta"] {
+    --callout-color: 107, 114, 128;
+    --callout-icon: lucide-file-text;
+}
+
+/* ========================================
+   CODE BLOCK ENHANCEMENTS
+   ======================================== */
+
+/* Base code block styling */
+.markdown-preview-view pre {
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-border);
+    padding: 1em;
+    background: var(--code-background);
+}
+
+/* Dataview queries - Teal theme */
+.markdown-preview-view pre:has(code.language-dataview),
+.markdown-source-view .HyperMD-codeblock-begin:has(.cm-keyword-dataview) ~ .HyperMD-codeblock {
+    border-left: 4px solid #0aa8bd;
+    background: linear-gradient(to right, rgba(10, 168, 189, 0.05), transparent);
+}
+
+/* SQL queries - Blue theme */
+.markdown-preview-view pre:has(code.language-sql),
+.markdown-source-view .HyperMD-codeblock-begin:has(.cm-keyword-sql) ~ .HyperMD-codeblock {
+    border-left: 4px solid #3b82f6;
+    background: linear-gradient(to right, rgba(59, 130, 246, 0.05), transparent);
+}
+
+/* JavaScript/TypeScript - Yellow theme */
+.markdown-preview-view pre:has(code.language-javascript),
+.markdown-preview-view pre:has(code.language-typescript),
+.markdown-preview-view pre:has(code.language-js),
+.markdown-preview-view pre:has(code.language-ts) {
+    border-left: 4px solid #eab308;
+    background: linear-gradient(to right, rgba(234, 179, 8, 0.05), transparent);
+}
+
+/* Python - Green theme */
+.markdown-preview-view pre:has(code.language-python) {
+    border-left: 4px solid #22c55e;
+    background: linear-gradient(to right, rgba(34, 197, 94, 0.05), transparent);
+}
+
+/* JSON/YAML - Purple theme */
+.markdown-preview-view pre:has(code.language-json),
+.markdown-preview-view pre:has(code.language-yaml) {
+    border-left: 4px solid #a855f7;
+    background: linear-gradient(to right, rgba(168, 85, 247, 0.05), transparent);
+}
+
+/* Bash/Shell - Gray theme */
+.markdown-preview-view pre:has(code.language-bash),
+.markdown-preview-view pre:has(code.language-shell) {
+    border-left: 4px solid #6b7280;
+    background: linear-gradient(to right, rgba(107, 114, 128, 0.05), transparent);
+}
+
+/* Markdown code - Pink theme */
+.markdown-preview-view pre:has(code.language-markdown),
+.markdown-preview-view pre:has(code.language-md) {
+    border-left: 4px solid #ec4899;
+    background: linear-gradient(to right, rgba(236, 72, 153, 0.05), transparent);
+}
+
+/* Code block language label */
+.markdown-preview-view pre code::before {
+    content: attr(class);
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 0.7em;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Enhanced inline code */
+.markdown-preview-view code:not(pre code) {
+    background: rgba(var(--callout-color, 107, 114, 128), 0.1);
+    color: var(--text-normal);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid rgba(var(--callout-color, 107, 114, 128), 0.2);
+}
+
+/* Dataview inline queries - highlight */
+.markdown-preview-view code:not(pre code)[class*="language-dataview"] {
+    background: rgba(10, 168, 189, 0.15);
+    border-color: rgba(10, 168, 189, 0.3);
+    color: #0aa8bd;
+}
+
+/* ========================================
+   SYNTAX HIGHLIGHTING FOR DATAVIEW
+   ======================================== */
+
+/* Dataview keywords */
+.cm-s-obsidian span.cm-keyword-dataview {
+    color: #0aa8bd;
+    font-weight: 600;
+}
+
+/* Dataview fields */
+.cm-s-obsidian span.cm-field {
+    color: #a855f7;
+}
+
+/* Dataview operators */
+.cm-s-obsidian span.cm-operator-dataview {
+    color: #f59e0b;
+}
+
+/* ========================================
+   BONUS: READING EXPERIENCE ENHANCEMENTS
+   ======================================== */
+
+/* Subtle note status indicators via left border */
+.markdown-preview-view[data-note-status="seedling"] {
+    border-left: 3px solid rgba(132, 204, 22, 0.5);
+}
+
+.markdown-preview-view[data-note-status="draft"] {
+    border-left: 3px solid rgba(234, 179, 8, 0.5);
+}
+
+.markdown-preview-view[data-note-status="evergreen"] {
+    border-left: 3px solid rgba(5, 150, 105, 0.5);
+}
+
+/* Enhanced blockquotes */
+.markdown-preview-view blockquote {
+    border-left: 4px solid var(--interactive-accent);
+    background: rgba(var(--interactive-accent-rgb), 0.05);
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Table styling improvements */
+.markdown-preview-view table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view th {
+    background: rgba(var(--interactive-accent-rgb), 0.1);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    padding: 0.75em 1em;
+}
+
+.markdown-preview-view td {
+    padding: 0.75em 1em;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view tr:hover {
+    background: rgba(var(--interactive-accent-rgb), 0.05);
+}
+
+/* Internal links with domain awareness */
+a.internal-link[href*="/Computer-Science/"] {
+    color: #3b82f6;
+}
+
+a.internal-link[href*="/Economics/"] {
+    color: #22c55e;
+}
+
+a.internal-link[href*="/Mind/"] {
+    color: #a855f7;
+}
+
+a.internal-link[href*="/Science/"] {
+    color: #f97316;
+}
+
+a.internal-link[href*="/Society/"] {
+    color: #ec4899;
+}
+
+/* Hover effects for all colored elements */
+.tag:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+.callout {
+    transition: box-shadow 0.2s ease;
+}
+
+.callout:hover {
+    box-shadow: 0 4px 12px rgba(var(--callout-color), 0.15);
+}
