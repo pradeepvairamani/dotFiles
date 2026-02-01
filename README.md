@@ -7,11 +7,14 @@ Personal macOS configuration synced via git.
 ```
 ├── iterm2/          # iTerm2 preferences
 │   └── com.googlecode.iterm2.plist
-└── vscode/          # VS Code settings
-    ├── settings.json
-    ├── keybindings.json
-    ├── snippets/
-    └── extensions.txt
+├── vscode/          # VS Code settings
+│   ├── settings.json
+│   ├── keybindings.json
+│   ├── snippets/
+│   └── extensions.txt
+└── zsh/             # Zsh configuration
+    ├── .zshrc
+    └── .zshrc.local.template
 ```
 
 ## Setup on a New Mac
@@ -42,6 +45,20 @@ cp -r ~/.dotfiles/vscode/snippets ~/Library/Application\ Support/Code/User/
 cat ~/.dotfiles/vscode/extensions.txt | xargs -L 1 code --install-extension
 ```
 
+### Zsh
+
+```bash
+# Backup existing .zshrc if needed
+cp ~/.zshrc ~/.zshrc.backup
+
+# Copy zshrc
+cp ~/.dotfiles/zsh/.zshrc ~/.zshrc
+
+# Create local secrets file from template
+cp ~/.dotfiles/zsh/.zshrc.local.template ~/.zshrc.local
+# Edit ~/.zshrc.local and add your secrets
+```
+
 ## Updating Settings
 
 ### iTerm2
@@ -49,10 +66,15 @@ Changes save automatically if "Save changes to folder when iTerm2 quits" is enab
 
 ### VS Code
 ```bash
-# Export current settings
 cp ~/Library/Application\ Support/Code/User/settings.json ~/.dotfiles/vscode/
 cp ~/Library/Application\ Support/Code/User/keybindings.json ~/.dotfiles/vscode/
 code --list-extensions > ~/.dotfiles/vscode/extensions.txt
+```
+
+### Zsh
+```bash
+cp ~/.zshrc ~/.dotfiles/zsh/.zshrc
+# Make sure to remove any secrets before committing!
 ```
 
 ### Commit and push
