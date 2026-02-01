@@ -1,0 +1,4 @@
+# Local secrets - copy this to ~/.zshrc.local and fill in your values
+# This file is NOT tracked in git
+
+export MSAZURE_AUTH_IDENT="your-auth-token-here"
