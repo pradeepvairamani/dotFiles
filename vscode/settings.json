@@ -1,0 +1,94 @@
+{
+  "files.autoSave": "afterDelay",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.inheritEnv": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "never"
+  },
+  "typescript.unstable": {
+    "organizeImportsIgnoreCase": true
+  },
+  "debug.javascript.terminalOptions": {
+    "skipFiles": ["<node_internals>/**"]
+  },
+  "projectManager.sortList": "Recent",
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.defaultLanguage": "json",
+  "workbench.colorTheme": "Ayu Dark",
+  "workbench.startupEditor": "newUntitledFile",
+  "emmet.excludeLanguages": ["markdown"],
+  "editor.fontFamily": "'Hack Nerd Font', 'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 12.8,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontLigatures": true,
+  "footsteps.highlightColor": "rgb(65, 120, 200)",
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "on",
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "editor.suggestSelection": "first",
+  "docker.images.sortBy": "CreatedTime",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.env.osx": {},
+  "zenMode.centerLayout": false,
+  "editor.minimap.enabled": false,
+  "azure.resourceFilter": [
+    "72f988bf-86f1-41af-91ab-2d7cd011db47/f512d215-3984-4778-8938-8d73f65119f6",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47/5a57980f-c6bb-4cd7-8b26-6d258bae1d71",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47/463bfa67-c5c9-4ef6-86e8-50ac3e7595b4",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47/0087c577-9a48-4d81-8821-1238af6b8fa5",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47/2288b81e-ead5-4c44-9d1e-ba8fa7eb6c26",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47/ce5d3e95-3fbb-4af8-b57e-450787221152"
+  ],
+  "editor.scrollBeyondLastLine": false,
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#0400ff",
+    "tab.unfocusedActiveBorder": "#000000",
+    "editor.selectionBackground": "#135564",
+    "editor.selectionHighlightBackground": "#135564"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.formatOnSave": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.cwd": "/Users/pradeep/Code",
+  "containers.images.sortBy": "CreatedTime",
+  "chat.mcp.autostart": "newAndOutdated",
+  "chat.tools.terminal.autoApprove": {
+    "/dev/null": true,
+    "az": true,
+    "/^git cherry-pick acdd77e84dd6 eda29f5a6dee f45a333906ae$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "git add": true,
+    "git cherry-pick": true,
+    "sed": true,
+    "git checkout": true,
+    "git rm": true,
+    "npm list": true,
+    "yarn why": true,
+    "mv": true,
+    "mkdir": true,
+    "cp": true
+  },
+  "claudeCode.preferredLocation": "sidebar",
+  "claudeCode.selectedModel": "opus",
+  "chat.viewSessions.orientation": "stacked"
+}

@@ -1,38 +1,64 @@
-# iTerm2 Settings
+# dotFiles
 
-Personal iTerm2 configuration synced via git.
+Personal macOS configuration synced via git.
+
+## Structure
+
+```
+├── iterm2/          # iTerm2 preferences
+│   └── com.googlecode.iterm2.plist
+└── vscode/          # VS Code settings
+    ├── settings.json
+    ├── keybindings.json
+    ├── snippets/
+    └── extensions.txt
+```
 
 ## Setup on a New Mac
 
-1. Clone this repo:
-   ```bash
-   git clone <your-repo-url> ~/.iterm2-settings
-   ```
+### Clone the repo
 
-2. Open iTerm2 and configure it to use this folder:
-   - Go to **Preferences** → **General** → **Preferences**
-   - Check **"Load preferences from a custom folder or URL"**
-   - Set the path to: `~/.iterm2-settings`
-   - Check **"Save changes to folder when iTerm2 quits"**
+```bash
+git clone https://github.com/pradeepvairamani/dotFiles.git ~/.dotfiles
+```
 
-3. Restart iTerm2 to load the settings.
+### iTerm2
+
+1. Open iTerm2 → **Preferences** → **General** → **Preferences**
+2. Check **"Load preferences from a custom folder or URL"**
+3. Set path to: `~/.dotfiles/iterm2`
+4. Check **"Save changes to folder when iTerm2 quits"**
+5. Restart iTerm2
+
+### VS Code
+
+```bash
+# Copy settings
+cp ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
+cp ~/.dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/
+cp -r ~/.dotfiles/vscode/snippets ~/Library/Application\ Support/Code/User/
+
+# Install extensions
+cat ~/.dotfiles/vscode/extensions.txt | xargs -L 1 code --install-extension
+```
 
 ## Updating Settings
 
-After making changes in iTerm2:
+### iTerm2
+Changes save automatically if "Save changes to folder when iTerm2 quits" is enabled.
 
+### VS Code
 ```bash
-cd ~/.iterm2-settings
+# Export current settings
+cp ~/Library/Application\ Support/Code/User/settings.json ~/.dotfiles/vscode/
+cp ~/Library/Application\ Support/Code/User/keybindings.json ~/.dotfiles/vscode/
+code --list-extensions > ~/.dotfiles/vscode/extensions.txt
+```
+
+### Commit and push
+```bash
+cd ~/.dotfiles
 git add -A
-git commit -m "Update iTerm2 settings"
+git commit -m "Update settings"
 git push
 ```
-
-## Pulling Updates on Another Mac
-
-```bash
-cd ~/.iterm2-settings
-git pull
-```
-
-Then restart iTerm2 to apply changes.
