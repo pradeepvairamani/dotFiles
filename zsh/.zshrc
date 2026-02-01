@@ -51,6 +51,9 @@ alias cat="bat"
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# iTerm2 shell integration (for proper command completion notifications)
+[[ -f ~/.iterm2_shell_integration.zsh ]] && source ~/.iterm2_shell_integration.zsh
+
 # Initialize zoxide (--cmd cd replaces the cd command)
 eval "$(/opt/homebrew/bin/zoxide init zsh --cmd cd)"
 export PATH="$HOME/.local/bin:$PATH"
